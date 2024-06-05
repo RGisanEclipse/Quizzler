@@ -12,7 +12,7 @@ Quizzler is a quiz app that allows users to attempt quizzes and receive real-tim
 
 ## Screenshots
 
-![Image](Documentation/QuizzlerPreview.png)
+![Image](Documentation/QuizzlerPreviewImage.png)
 
 ## Technologies Used
 
