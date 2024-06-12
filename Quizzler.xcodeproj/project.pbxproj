@@ -15,6 +15,7 @@
 		AD4BDE5622D878BC005BA4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4BDE5422D878BC005BA4CC /* LaunchScreen.storyboard */; };
 		B914A3842C18DF1A006915E0 /* QuizzlerPreviewImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B914A3832C18DF1A006915E0 /* QuizzlerPreviewImage.png */; };
 		B9D98FC12B73DC6500FA9F9B /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D98FC02B73DC6500FA9F9B /* Question.swift */; };
+		B9EAD4D42C19B0AC00ECB9AD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EAD4D32C19B0AC00ECB9AD /* ResultsViewController.swift */; };
 		B9FF138A2B73DA8C00F91B44 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FF13892B73DA8C00F91B44 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		B914A3832C18DF1A006915E0 /* QuizzlerPreviewImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizzlerPreviewImage.png; sourceTree = "<group>"; };
 		B91D42E12C10E0D0002ACAD6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B9D98FC02B73DC6500FA9F9B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B9EAD4D32C19B0AC00ECB9AD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		B9FF13892B73DA8C00F91B44 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4BDE4D22D878BA005BA4CC /* ViewController.swift */,
+				B9EAD4D32C19B0AC00ECB9AD /* ResultsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				AD4BDE4A22D878BA005BA4CC /* AppDelegate.swift in Sources */,
 				AD4BDE4C22D878BA005BA4CC /* SceneDelegate.swift in Sources */,
 				B9FF138A2B73DA8C00F91B44 /* QuizBrain.swift in Sources */,
+				B9EAD4D42C19B0AC00ECB9AD /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

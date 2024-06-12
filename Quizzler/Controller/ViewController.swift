@@ -9,6 +9,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var thirdOption: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(resetQuiz), name: .didDismissResultsViewController, object: nil)
         updateUI()
     }
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -21,6 +22,10 @@ class ViewController: UIViewController {
         }
         quizBrain.nextQuestion()
         Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        let questionsFinished = quizBrain.getQuestionsFinished()
+        if(questionsFinished){
+            self.performSegue(withIdentifier: "goToResults", sender: self)
+        }
     }
     @objc func updateUI(){
         questionLabel.text = quizBrain.getQuestionText()
@@ -35,6 +40,16 @@ class ViewController: UIViewController {
         firstOption.backgroundColor = UIColor.clear
         secondOption.backgroundColor = UIColor.clear
         thirdOption.backgroundColor = UIColor.clear
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier=="goToResults"){
+            let destinationVC = segue.destination as! ResultsViewController
+            destinationVC.score = quizBrain.getScore()
+        }
+    }
+    @objc func resetQuiz() {
+        quizBrain.resetQuiz()
+        updateUI()
     }
 }
 
