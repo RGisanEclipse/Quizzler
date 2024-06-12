@@ -55,7 +55,10 @@ struct QuizBrain{
     func getScore() -> String{
         return "Score: \(score)"
     }
-    func getQuestionsFinished()->Bool{
+    func getScoreForSegue() -> String{
+        return "\(score)"
+    }
+    func getQuestionsFinished() -> Bool{
         return questionsFinished
     }
 }

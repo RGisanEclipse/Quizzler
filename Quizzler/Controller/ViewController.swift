@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier=="goToResults"){
             let destinationVC = segue.destination as! ResultsViewController
-            destinationVC.score = quizBrain.getScore()
+            destinationVC.score = quizBrain.getScoreForSegue()
         }
     }
     @objc func resetQuiz() {
