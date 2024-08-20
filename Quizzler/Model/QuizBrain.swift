@@ -34,6 +34,9 @@ struct QuizBrain{
             score += 1
             return true
         } else{
+            if score != 0{
+                score -= 1
+            }
             return false
         }
     }
