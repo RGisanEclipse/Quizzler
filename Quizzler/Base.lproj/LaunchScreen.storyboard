@@ -20,36 +20,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="pBi-Cq-y4a">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="Aru-Vl-tC0">
-                                <rect key="frame" x="95" y="284" width="240" height="128"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ulE-7p-g3S">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="5GZ-Nn-sAc"/>
-                                            <constraint firstAttribute="height" constant="128" id="KJ1-5C-ouc"/>
-                                            <constraint firstAttribute="width" secondItem="ulE-7p-g3S" secondAttribute="height" multiplier="15:8" id="MTN-WD-HIW"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="w6H-5C-Fqm"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Hek-va-aTn">
+                                <rect key="frame" x="165" y="416" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstItem="ulE-7p-g3S" firstAttribute="top" secondItem="Aru-Vl-tC0" secondAttribute="top" id="CYk-Ln-O5x"/>
-                                    <constraint firstItem="ulE-7p-g3S" firstAttribute="leading" secondItem="Aru-Vl-tC0" secondAttribute="leading" id="k0B-Jf-qMz"/>
-                                    <constraint firstAttribute="trailing" secondItem="ulE-7p-g3S" secondAttribute="trailing" id="vTy-Xt-bR1"/>
+                                    <constraint firstAttribute="height" constant="100" id="797-NW-LaN"/>
+                                    <constraint firstAttribute="width" constant="100" id="Csq-xR-tAO"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pBi-Cq-y4a" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="FMW-Ms-rkz"/>
                             <constraint firstItem="pBi-Cq-y4a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="U92-2I-HG8"/>
-                            <constraint firstItem="Aru-Vl-tC0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="VVh-2T-3IT"/>
-                            <constraint firstItem="Aru-Vl-tC0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="dIc-4i-eWp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aru-Vl-tC0" secondAttribute="trailing" constant="95" id="fE5-ed-RFi"/>
+                            <constraint firstItem="Hek-va-aTn" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="b2o-uH-Siq"/>
                             <constraint firstAttribute="bottom" secondItem="pBi-Cq-y4a" secondAttribute="bottom" id="mcg-4b-guV"/>
                             <constraint firstItem="pBi-Cq-y4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rFW-cv-VXO"/>
+                            <constraint firstItem="Hek-va-aTn" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rdf-kj-c34"/>
                         </constraints>
                     </view>
                 </viewController>
